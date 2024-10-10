@@ -7,6 +7,9 @@ Con este programa podras buscar peliculas desde una base de datos de IMDB.
 
 - Tener en cuenta que es necesario tener instalado Docker, desde la diguiente URL se puede descargar: https://www.docker.com/
 - Clonar este repositorio.
+```
+git clone https://github.com/kevinsteeven/BusquedaSemantica
+```
 - Crear una imagen de docker a partor del dockerfile presente en este repositorio, esto se puede realizar usando el comando de consola 'docker build -t'(Más información sobre el comando en:https://docs.docker.com/reference/cli/docker/buildx/build/).
 ```
 docker build -t mi_imagen <ruta_dockerfile>
