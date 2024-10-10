@@ -24,4 +24,4 @@ Comando para Linux:
 ```
 docker run -it -v "%cd%" /semantic_search:/app/semantic_search <nombre_imagen>
 ```
-- Ingresar en la consola la frase a partir de la cual se quiere hacer la busqueda de la pelicula y dar enter, si se desea deteenr el programa dar enter sin ingresar nada en el campo de busqueda de la consola.
+- Ingresar en la consola la frase a partir de la cual se quiere hacer la busqueda de la pelicula y dar enter, si se desea detener el programa dar enter sin ingresar nada en el campo de busqueda de la consola.
