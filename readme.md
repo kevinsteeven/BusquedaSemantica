@@ -9,7 +9,15 @@ Con este programa podras buscar peliculas desde una base de datos de IMDB.
 - Clonar este repositorio.
 - Crear una imagen de docker a partor del dockerfile presente en este repositorio, esto se puede realizar usando el comando de consola 'docker build -t'(Más información sobre el comando en:https://docs.docker.com/reference/cli/docker/buildx/build/).
 ```
-docker build -t <NombreImagen>
+docker build -t mi_imagen <ruta_dockerfile>
 ```
 - Luego se debe crear un contenedor a partir del volumen de la imagen creada, esto se puede realizar usando el comando de consola 'docker run -it -v'. Es importante tener en cuenta el parametro '-it' ya que va a permitir la interaccion con la consola(Más información sobre el comando en:https://docs.docker.com/reference/cli/docker/container/run/).
+Comando para Windows:
+```
+docker run -it -v "%cd%"/<ruta_local>:<ruta_contenedor>
+```
+Comando para Linux:
+```
+docker run -it -v $(pwd)/<ruta_local>:<ruta_contenedor> read_file
+```
 - Ingresar en la consola la frase a partir de la cual se quiere hacer la busqueda de la pelicula y dar enter, si se desea deteenr el programa dar enter sin ingresar nada en el campo de busqueda de la consola.
