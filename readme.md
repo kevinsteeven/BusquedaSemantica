@@ -1,7 +1,7 @@
 
 # Buscador de películas semántico
 
-Con este programa podras buscar peliculas desde una base de datos de IMDB.
+Con este programa podras buscar peliculas desde una base de datos de IMDB. En este programa se veran implementados los principios SOLID y el patron de diseño Facade
 
 ## ¿Como usar el programa?
 
@@ -25,3 +25,22 @@ Comando para Linux:
 docker run -it -v "$(pwd)/semantic_search:/app/semantic_search" <nombre_imagen>
 ```
 - Ingresar en la consola la frase a partir de la cual se quiere hacer la busqueda de la pelicula y dar enter, si se desea detener el programa dar enter sin ingresar nada en el campo de busqueda de la consola.
+
+En el proyecto se encuentra adicionalmente un archivo requirements.txt, en este archivo se encuentran librerias necesarias para ejecutar pruebas del proyecto, mas no para la ejecucion del proyecto en si
+
+### ¿Como realizar test?
+
+-Activar ambiente virtual
+```
+.\venv\Scripts\activate
+```
+
+-Realizar instalacion de las librerias necesarias
+```
+pip install -r requirements.txt
+```
+
+-Ejecutar test con pytest
+```
+python -m unittest  discover -v tests/
+```

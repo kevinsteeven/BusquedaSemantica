@@ -8,10 +8,10 @@ RUN pip install -U sentence-transformers pandas
 WORKDIR /app
 
 #Copiar el archivo de python y el archivo de texto a la imagen
-COPY semantic_search/ ./semantic_search/
+COPY src ./src/
 
 #Crear volumen
-VOLUME ./app/semantic_search
+VOLUME ./app/src
 
 #Comando que se se ejecuta al iniciar el contenedor
-CMD ["python","semantic_search/main_students.py"]
+CMD ["python","src/main_students.py"]
