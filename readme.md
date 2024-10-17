@@ -1,7 +1,7 @@
 
 # Buscador de películas semántico
 
-Con este programa podras buscar peliculas desde una base de datos de IMDB. En este programa se veran implementados los principios SOLID y el patron de diseño Facade
+Con este programa podras buscar peliculas desde una base de datos de IMDB. En este programa se veran implementados los principios SOLID (Los principios S: Single Responsability y D:Dependency inversion) y el patron de diseño Facade
 
 ## ¿Como usar el programa?
 
@@ -29,8 +29,13 @@ docker run -it -v "$(pwd)/semantic_search:/app/semantic_search" <nombre_imagen>
 En el proyecto se encuentra adicionalmente un archivo requirements.txt, en este archivo se encuentran librerias necesarias para ejecutar pruebas del proyecto, mas no para la ejecucion del proyecto en si
 
 ### ¿Como realizar test?
+Para realizar los test unitarios presentes en el proyecto se pueden seguir los siguientes pasos(Los dos primeros pasos consisten en la creación y activación de un entorno virtual, lo cual no es obligatorio pero si es recomendable para evitar conflictos con otros complementos en la maquina donde se realizara la ejecución):
 
--Activar ambiente virtual
+-Crear entorno virtual
+```
+python -m venv venv
+```
+-Activar entorno virtual
 ```
 .\venv\Scripts\activate
 ```
